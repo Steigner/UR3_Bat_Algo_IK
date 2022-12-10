@@ -1,6 +1,6 @@
 ## :bat: Inverse Kinematics by Bat algorithm 
 
-Within this repository, the Bat Algorithm for solving IK (Inverse Kinematics) was implemented. The algorithm cannot scale with the speed of analytical or numerical methods of IK. The advantage of this implementation, that it is a very general approach, that does not need specific knowledge about the robot. Needed is only the number of joints represented by the **dimension** and D-H table (non=modified version) for calculation of FK (Forward Kinematics).
+Within this repository, the Bat Algorithm for solving IK (Inverse Kinematics) was implemented. The algorithm cannot scale with the speed of analytical or numerical methods of IK. The advantage of this implementation, that it is a very general approach, that does not need specific knowledge about the robot. Needed is only the number of joints represented by the **dimension** and D-H table (non-modified version) for calculation of FK (Forward Kinematics).
 
 The algorithm as you can expect is not very efficient for solving the translational and rotational part of IK. In script is example of translational part IK calculation (demo), and translational + rotational example of calculation.
 
