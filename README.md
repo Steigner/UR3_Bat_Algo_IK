@@ -1,4 +1,4 @@
-## :bat: Inverse Kinematics by Bat algorithm 
+## :bat: Inverse Kinematics by Bat Algorithm (BA) 
 
 Within this repository, the Bat Algorithm for solving IK (Inverse Kinematics) was implemented. The algorithm cannot scale with the speed of analytical or numerical methods of IK. The advantage of this implementation, that it is a very general approach, that does not need specific knowledge about the robot. Needed is only the number of joints represented by the **dimension** and D-H table (non-modified version) for calculation of FK (Forward Kinematics).
 
@@ -25,7 +25,7 @@ Install libraries from **pyproject.toml/requirements.txt**.
 
 ![Demo](https://github.com/Steigner/UR3_Bat_Algo_IK/blob/main/docs/demo.gif)
 
-:warning: I do not guarantee the most optimal variant of the Bat Algorithm.
+:warning: I do not guarantee the most optimal variant of the [Bat Algorithm](https://www.sciencedirect.com/topics/computer-science/bat-algorithm)
 
 ## :information_source: Contacts
 
