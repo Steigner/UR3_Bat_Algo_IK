@@ -1,9 +1,10 @@
 import numpy as np
 from numpy import cos, sin
+# Forward Kinematics
 from FK import FK
 
 class Obj_Func(object):
-    def __init__(self, target) -> None:
+    def __init__(self, target: np.ndarray) -> None:
         self.target = target
         # 2 option for translation + rotation
         # self.T_desired = self.__comp_t_desired(target)

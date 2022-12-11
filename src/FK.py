@@ -1,7 +1,7 @@
 import numpy as np
 from numpy import pi, cos, sin
 
-def FK(th) -> np.ndarray:
+def FK(th: np.ndarray) -> np.ndarray:
     """
     Computation of Forward Kinematics by classics D-H tables  
 

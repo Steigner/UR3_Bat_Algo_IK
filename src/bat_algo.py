@@ -1,11 +1,13 @@
 import time
 import itertools
 import numpy as np
+# Parameters of Bat Algo
 from params import Params
+# Get objective function
 from obj_func import Obj_Func
 
 class Bat_Algorithm(Params):
-    def __init__(self, target) -> None:
+    def __init__(self, target: np.ndarray) -> None:
         """
         Initialization parameters of Bat algorithm
 
@@ -95,7 +97,7 @@ class Bat_Algorithm(Params):
         """
         return np.random.random_sample()
 
-    def bat_algo(self):
+    def bat_algo(self) -> tuple[np.ndarray, np.float64, np.float64]:
         """
         Bat Algo
 
@@ -105,7 +107,7 @@ class Bat_Algorithm(Params):
         times = self.nRuns 
         q_out = np.zeros((times,self.dim))
         eval = np.full(times, float('inf'))
-        t = []
+        t = np.array([])
         
         for run_i in range(times):
             start = time.time()
@@ -151,11 +153,12 @@ class Bat_Algorithm(Params):
             q_out[run_i,:] = self.best
             eval[run_i] = self.best_eval
             
-            t.append(time.time() - start)
+            # t.append(time.time() - start)
+            t = np.append(t, [time.time() - start])
 
             print(f'[INFO] q = {q_out[run_i]}, error = {eval[run_i]:.4f}')
             
             if(eval[run_i] < 0.01):
                 break
-             
+        
         return q_out[run_i], eval[run_i], t[run_i]
