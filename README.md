@@ -26,7 +26,3 @@ Install libraries from **pyproject.toml/requirements.txt**.
 ![Demo](https://github.com/Steigner/UR3_Bat_Algo_IK/blob/main/docs/demo.gif)
 
 :warning: I do not guarantee the most optimal variant of the [Bat Algorithm](https://www.sciencedirect.com/topics/computer-science/bat-algorithm)
-
-## :information_source: Contacts
-
-:mailbox: m.juricek@outlook.com
